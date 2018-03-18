@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="teacher" class="ioc.entity.Teacher">
+        <property name="id" value="233"/>
+        <property name="name" value="teacher1"/>
+    </bean>
+    <bean id="stu" class="ioc.entity.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="zq"/>
+        <property name="teacher" ref="teacher"/>
+    </bean>
+    <!--<alias name="str" alias="string"></alias>-->
+</beans>
